@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MAISON | French Dining</title>
+    <meta name="description" content="MAISON is a responsive French dining restaurant HTML template with interactive menu, reservation UI, gallery, and mobile navigation.">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="logo">
+            <a href="#">
+                <img src="./assets/img/logo.png" alt="MAISON French Dining">
+            </a>
+        </h1>
+
+        <nav class="gnb">
+            <ul>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#menu">MENU</a>
+                </li>
+                <li>
+                    <a href="#reservation">RESERVATION</a>
+                </li>
+                <li>
+                    <a href="#gallery">GALLERY</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>            
+        </nav>
+        <button class="menu-btn" type="button" aria-label="메뉴 열기">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-cont">
+                <h2 class="title">DELICATE<br>FLAVOR,<br>TIMELESS<br>EXPERIENCE</h2>
+                <p class="txt">섬세한 맛의 조화, 그리고 특별한 순간</p>
+                <a href="#menu" class="hero-btn">DISCOVER MENU</a>
+            </div>
+            <div class="hero-visual"></div>            
+        </section>
+
+        <section class="features">
+            <ul>
+                <li class="feature-item fine">
+                    <span class="unit">FINE INGREDIENTS</span>
+                    <p class="txt">엄선된 제철 식재료</p>
+                </li>
+                <li class="feature-item feature-chef">
+                    <span class="unit">EXPERT CHEF</span>
+                    <p class="txt">정성이 담긴 전문 셰프의 요리</p>
+                </li>
+                <li class="feature-item moment">
+                    <span class="unit">MEMORABLE MOMENT</span>
+                    <p class="txt">소중한 순간을 더 특별하게</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="about" id="about">
+            <div class="inner">
+                <div class="about-visual">
+                    <div class="mask mask01">
+                        <div class="img"></div>
+                    </div>
+                    <div class="mask mask02">
+                        <div class="img"></div>
+                    </div>
+                    <div class="mask mask03">
+                        <div class="img"></div>
+                    </div>
+                </div>
+                <div class="about-cont">
+                    <span class="overline">about maison</span>
+                    <h2 class="tit">A PLACE WHERE<br>TASTE MEETS ART</h2>
+                    <p class="txt">매종은 프랑스 정통 요리에 현대적인 감각을 더해<br>감각적인 미식 경험을 선사합니다. <br>음식, 공간, 서비스의 완벽한 조화를 느껴보세요.</p>
+                    <p class="sign"></p>
+                    <a href="#reservation" class="about-btn">Reservation Request</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <div class="menu-sticky">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <h3 class="tit">SEASONAL SPECIAL MENU</h3>
+                        <p class="tip">계절의 영감을 담은 MAISON의 시그니처 메뉴</p>
+                    </div>
+                    <div class="menu-cont">
+                        <div class="menu-view">
+                            <img src="./assets/img/menu_food01.png" alt="관자 구이">
+                        </div>
+                        <div class="menu-slide">
+                            <div class="slide-cont">
+                                <div class="cont-place">
+                                    <span class="overline">PAN-SEARED SCALLOPS</span>
+                                    <strong class="tit">관자 구이</strong>
+                                    <p class="txt kr">노릇하게 구운 관자에 향긋한 허브와 버터를 더한 요리</p>
+                                    <span class="txt en">Golden-seared scallops finished with aromatic herbs and butter.</span>
+                                </div>
+                                <div class="cont-pay">28,000</div>
+                            </div>
+                            <div class="slide-wrap">
+                                <div class="slide-viewport">
+                                    <div class="slide-list">
+                                        <button class="slide" type="button"
+                                            data-image="./assets/img/menu_food02.png"
+                                            data-name-en="LOBSTER BISQUE"
+                                            data-name-kr="랍스터 비스크"
+                                            data-desc-kr="진한 랍스터의 풍미를 담은 부드럽고 깊은 크림 수프"
+                                            data-desc-en="Rich and creamy lobster bisque with deep, delicate flavors."
+                                            data-price="18,000">
+                                            <span class="slide-img"><img src="./assets/img/menu_food02.png" alt="랍스터 비스크"></span>
+                                            <span class="slide-txt"><strong class="overline">LOBSTER BISQUE</strong><span class="txt">랍스터 비스크</span></span>
+                                        </button>
+                                        <button class="slide" type="button"
+                                            data-image="./assets/img/menu_food03.png"
+                                            data-name-en="DUCK CONFIT"
+                                            data-name-kr="오리 콩피"
+                                            data-desc-kr="천천히 익혀 겉은 바삭하고 속은 촉촉하게 완성한 오리 요리"
+                                            data-desc-en="Slow-cooked duck with crispy skin and tender, juicy meat."
+                                            data-price="32,000">
+                                            <span class="slide-img"><img src="./assets/img/menu_food03.png" alt="오리 콩피"></span>
+                                            <span class="slide-txt"><strong class="overline">DUCK CONFIT</strong><span class="txt">오리 콩피</span></span>
+                                        </button>
+                                        <button class="slide" type="button"
+                                            data-image="./assets/img/menu_food04.png"
+                                            data-name-en="CHOCOLATE SOUFFLÉ"
+                                            data-name-kr="초콜릿 수플레"
+                                            data-desc-kr="진한 초콜릿의 풍미와 폭신한 식감이 어우러진 디저트"
+                                            data-desc-en="A light, airy soufflé filled with rich chocolate flavor."
+                                            data-price="12,000">
+                                            <span class="slide-img"><img src="./assets/img/menu_food04.png" alt="초콜릿 수플레"></span>
+                                            <span class="slide-txt"><strong class="overline">CHOCOLATE SOUFFLÉ</strong><span class="txt">초콜릿 수플레</span></span>
+                                        </button>
+                                        <button class="slide active" type="button"
+                                            data-image="./assets/img/menu_food01.png"
+                                            data-name-en="PAN-SEARED SCALLOPS"
+                                            data-name-kr="관자 구이"
+                                            data-desc-kr="노릇하게 구운 관자에 향긋한 허브와 버터를 더한 요리"
+                                            data-desc-en="Golden-seared scallops finished with aromatic herbs and butter."
+                                            data-price="28,000">
+                                            <span class="slide-img"><img src="./assets/img/menu_food01.png" alt="관자 구이"></span>
+                                            <span class="slide-txt"><strong class="overline">PAN-SEARED SCALLOPS</strong><span class="txt">관자 구이</span></span>
+                                        </button>
+                                        <button class="slide" type="button"
+                                            data-image="./assets/img/menu_food02.png"
+                                            data-name-en="LOBSTER BISQUE"
+                                            data-name-kr="랍스터 비스크"
+                                            data-desc-kr="진한 랍스터의 풍미를 담은 부드럽고 깊은 크림 수프"
+                                            data-desc-en="Rich and creamy lobster bisque with deep, delicate flavors."
+                                            data-price="18,000">
+                                            <span class="slide-img"><img src="./assets/img/menu_food02.png" alt="랍스터 비스크"></span>
+                                            <span class="slide-txt"><strong class="overline">LOBSTER BISQUE</strong><span class="txt">랍스터 비스크</span></span>
+                                        </button>
+                                        <button class="slide" type="button"
+                                            data-image="./assets/img/menu_food03.png"
+                                            data-name-en="DUCK CONFIT"
+                                            data-name-kr="오리 콩피"
+                                            data-desc-kr="천천히 익혀 겉은 바삭하고 속은 촉촉하게 완성한 오리 요리"
+                                            data-desc-en="Slow-cooked duck with crispy skin and tender, juicy meat."
+                                            data-price="32,000">
+                                            <span class="slide-img"><img src="./assets/img/menu_food03.png" alt="오리 콩피"></span>
+                                            <span class="slide-txt"><strong class="overline">DUCK CONFIT</strong><span class="txt">오리 콩피</span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="navigation">
+                                    <ul></ul>
+                                </div>
+                            </div>
+                            <div class="slide-arrow">
+                                <button type="button" class="prev" aria-label="이전 메뉴">←</button>
+                                <button type="button" class="next" aria-label="다음 메뉴">→</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chef">
+            <div class="inner">
+                <div class="chef-cont">
+                   <div class="chef-tit">
+                        <span class="overline">CHEF’S STORY</span>
+                        <p class="tit">PASSION FOR PERFECTION</p>
+                   </div>
+                   <div class="txt">
+                        <p>좋은 식재료에 대한 존중과 끊임없는 연구,<br>그리고 습관에서 피어나는 정성이<br>MAISON의 모든 요리에 정성을 담아냅니다.</p>
+                   </div>
+                   <button class="chef-btn" type="button">MEET OUR CHEF</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="reservation" id="reservation">
+            <div class="inner">
+                <div class="title-wrap">
+                    <h3 class="tit">RESERVE YOUR TABLE</h3>
+                    <p class="tip">소중한 사람과 특별한 시간을 예약 하세요.</p>
+                </div>
+                <div class="block-wrap">
+                    <div class="block block01">
+                        <div class="tit-area">
+                            <span class="num">01</span>
+                            <strong class="tit">date</strong>
+                        </div>
+                        <button class="block-btn" type="button">
+                            <span class="txt" data-date="2026.09.15">2026.09.15</span>
+                        </button>
+                        <div class="option-list date-options">
+                            <div class="calendar-head">
+                                <button class="btn left-btn" type="button">
+                                    <img src="./assets/img/left_arrow.png" alt="">
+                                </button>
+                                <strong class="month">SEP 2026</strong>
+                                <button class="btn right-btn" type="button">
+                                    <img src="./assets/img/right_arrow.png" alt="">
+                                </button>
+                            </div>
+                            <div class="calendar-cont">
+                                <button type="button" data-date="2026.09.13">
+                                    <span class="day week-sun">sun</span>
+                                    <p class="num">13</p>
+                                </button>
+                                <button type="button" data-date="2026.09.14">
+                                    <span class="day">mon</span>
+                                    <p class="num">14</p>
+                                </button>
+                                <button type="button" data-date="2026.09.15">
+                                    <span class="day">tue</span>
+                                    <p class="num">15</p>
+                                </button>
+                                <button type="button" data-date="2026.09.16">
+                                    <span class="day">wed</span>
+                                    <p class="num">16</p>
+                                </button>
+                                <button type="button" data-date="2026.09.17">
+                                    <span class="day">thu</span>
+                                    <p class="num">17</p>
+                                </button>
+                                <button type="button" data-date="2026.09.18">
+                                    <span class="day">fri</span>
+                                    <p class="num">18</p>
+                                </button>
+                                <button type="button" data-date="2026.09.19">
+                                    <span class="day week-sat">sat</span>
+                                    <p class="num">19</p>
+                                </button>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block block02">
+                        <div class="tit-area">
+                            <span class="num">02</span>
+                            <strong class="tit">time</strong>
+                        </div>
+                        <button class="block-btn" type="button">
+                            <span class="txt" data-time="17:00">17:00</span>
+                        </button>
+                        <div class="option-list time-options">
+                            <button class="time-btn active" type="button" data-time="17:00">17:00</button>
+                            <button class="time-btn" type="button" data-time="17:30">17:30</button>
+                            <button class="time-btn" type="button" data-time="18:00">18:00</button>
+                            <button class="time-btn" type="button" data-time="18:30">18:30</button>
+                            <button class="time-btn" type="button" data-time="19:00">19:00</button>
+                            <button class="time-btn" type="button" data-time="19:30">19:30</button>
+                            <button class="time-btn" type="button" data-time="20:00">20:00</button>
+                            <button class="time-btn" type="button" data-time="20:30">20:30</button>
+                            <button class="time-btn" type="button" data-time="21:00">21:00</button>
+                            <button class="time-btn" type="button" data-time="21:30">21:30</button>
+                        </div>
+                    </div>
+                    <div class="block block03">
+                        <div class="tit-area">
+                            <span class="num">03</span>
+                            <strong class="tit">guests</strong>
+                        </div>
+                        <button class="block-btn" type="button">
+                            <span class="txt" data-guest="02">2 명</span>
+                        </button>
+                        <div class="option-list guest-options">
+                            <button class="guest-btn" type="button" data-guest="01">1 명</button>
+                            <button class="guest-btn active" type="button" data-guest="02">2 명</button>
+                            <button class="guest-btn" type="button" data-guest="03">3 명</button>
+                            <button class="guest-btn" type="button" data-guest="04">4 명</button>
+                            <button class="guest-btn" type="button" data-guest="05">5 명</button>
+                            <button class="guest-btn" type="button" data-guest="06">6 명</button>
+                            <button class="guest-btn" type="button" data-guest="07">7 명</button>
+                            <button class="guest-btn" type="button" data-guest="08">8 명</button>
+                        </div>
+                    </div>
+                    <div class="reservation-card">
+                        <div class="card-cont">
+                            <strong class="card-tit">YOUR RESERVATION</strong>
+                            <p class="card-date" data-date="2026.09.15">sep 15, 2026</p>
+                            <p class="card-time" data-time="17:00">17:00</p>
+                        </div>
+                        <div class="card-num">
+                            <span class="tit">guests</span>
+                            <p class="num">02</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-actions">
+                    <button class="reservation-btn confirm-btn" type="button">
+                        CONFIRM RESERVATION
+                    </button>
+
+                    <button class="reservation-btn reset-btn" type="button">
+                        RESET
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="reservation-modal">
+            <div class="modal-cont">
+                <span class="overline">MAISON</span>
+
+                <strong class="tit">
+                    RESERVATION<br>
+                    CONFIRMED
+                </strong>
+
+                <p class="txt">
+                    Your table has been reserved.
+                </p>
+
+                <div class="modal-info">
+                    <span class="modal-date"></span>
+                    <span class="modal-time"></span>
+                    <span class="modal-guests"></span>
+                </div>
+
+                <button class="modal-close" type="button">
+                    CLOSE
+                </button>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div class="inner">
+                <div class="title-wrap">
+                    <h3 class="tit">MAISON GALLERY</h3>
+                    <p class="tip">소중한 사람과 행복한 시간을 둘러보세요.</p>
+                </div>
+                <div class="gallery-list">
+                    <figure class="gallery-item medium">
+                        <img src="./assets/img/gallery01.png" alt="MAISON 시그니처 요리">
+                    </figure>
+                    <figure class="gallery-item tall">
+                        <img src="./assets/img/gallery02.png" alt="MAISON 레스토랑 인테리어">
+                    </figure>
+                    <figure class="gallery-item short">
+                        <img src="./assets/img/gallery03.png" alt="와인과 테이블 세팅">
+                    </figure>
+                    <figure class="gallery-item tall">
+                        <img src="./assets/img/gallery04.png" alt="MAISON 시그니처 요리">
+                    </figure>
+                    <figure class="gallery-item medium">
+                        <img src="./assets/img/gallery05.png" alt="MAISON 레스토랑 인테리어">
+                    </figure>
+                    <figure class="gallery-item tall">
+                        <img src="./assets/img/gallery06.png" alt="와인과 테이블 세팅">
+                    </figure>
+                    <figure class="gallery-item short">
+                        <img src="./assets/img/food01.png" alt="MAISON 시그니처 요리">
+                    </figure>
+                    <figure class="gallery-item tall">
+                        <img src="./assets/img/gallery01.png" alt="MAISON 레스토랑 인테리어">
+                    </figure>
+                    <figure class="gallery-item medium">
+                        <img src="./assets/img/gallery02.png" alt="와인과 테이블 세팅">
+                    </figure>
+                    <figure class="gallery-item medium">
+                        <img src="./assets/img/chef.png" alt="MAISON 시그니처 요리">
+                    </figure>
+                    <figure class="gallery-item short">
+                        <img src="./assets/img/food06.png" alt="MAISON 레스토랑 인테리어">
+                    </figure>
+                    <figure class="gallery-item tall">
+                        <img src="./assets/img/gallery03.png" alt="와인과 테이블 세팅">
+                    </figure>
+                    <figure class="gallery-item tall">
+                        <img src="./assets/img/gallery04.png" alt="MAISON 시그니처 요리">
+                    </figure>
+                    <figure class="gallery-item medium">
+                        <img src="./assets/img/gallery05.png" alt="MAISON 레스토랑 인테리어">
+                    </figure>
+                    <figure class="gallery-item short">
+                        <img src="./assets/img/gallery06.png" alt="와인과 테이블 세팅">
+                    </figure>
+                    <figure class="gallery-item short">
+                        <img src="./assets/img/food02.png" alt="MAISON 시그니처 요리">
+                    </figure>
+                    <figure class="gallery-item tall">
+                        <img src="./assets/img/gallery02.png" alt="MAISON 레스토랑 인테리어">
+                    </figure>
+                    <figure class="gallery-item medium">
+                        <img src="./assets/img/gallery05.png" alt="와인과 테이블 세팅">
+                    </figure>
+                    <figure class="gallery-item medium">
+                        <img src="./assets/img/gallery03.png" alt="MAISON 시그니처 요리">
+                    </figure>
+                    <figure class="gallery-item tall">
+                        <img src="./assets/img/gallery04.png" alt="MAISON 레스토랑 인테리어">
+                    </figure>
+                    <figure class="gallery-item short">
+                        <img src="./assets/img/food05.png" alt="와인과 테이블 세팅">
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="inner">
+            <div class="footer-logo">
+                <img src="./assets/img/footer_logo.png" alt="MAISON French Dining">
+            </div>
+            <div class="footer-info">
+                <ul>
+                    <li class="info-txt address">
+                        <strong class="tit">ADDRESS</strong>
+                        <p class="txt">서울 용산구 이태원로 45</p>
+                    </li>
+                    <li class="info-txt tel">
+                        <strong class="tit">TEL</strong>
+                        <p class="txt">02-987-6543</p>
+                    </li>
+                    <li class="info-txt house">
+                        <strong class="tit">HOURS</strong>
+                        <p class="txt">12:00 - 23:00 (매주 월요일 휴무)</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="motion-logo">maison</div>
+            <div class="copyright">
+                <span class="txt">ⓒ2026 MAISON Restaurant. All Rights Reserved</span>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
