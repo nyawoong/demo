@@ -32,6 +32,31 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// 현재 스크롤 위치에 따라 상단 메뉴 활성화
+const sectionNavLinks = [...navList].filter(link => link.hash && document.querySelector(link.hash));
+
+function updateActiveNav() {
+    const position = window.scrollY + header.offsetHeight + 100;
+    let activeId = '';
+
+    sectionNavLinks.forEach(link => {
+        const section = document.querySelector(link.hash);
+        if (section.offsetTop <= position) activeId = section.id;
+    });
+
+    // 첫 섹션보다 위에 있으면 선택 표시 제거
+    sectionNavLinks.forEach(link => {
+        const isActive = link.hash === `#${activeId}`;
+        link.classList.toggle('active', isActive);
+        if (isActive) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+    });
+}
+
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+window.addEventListener('resize', updateActiveNav);
+updateActiveNav();
+
 // slide move motion
 pagBtn.forEach(function(item, index) {
 

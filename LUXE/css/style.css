@@ -108,13 +108,14 @@ header nav ul {
     /* gap: 40px; */
 }
 header nav ul li {
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     position: relative;
 }
 header nav ul li a {
     font-size: var(--font-md);
     transition: color 0.3s ease-in-out;
     position: relative;
+    padding: 10px 20px;
 }
 header nav ul li a.color {
     color: var(--color-default);
@@ -154,6 +155,11 @@ header.blur nav ul li a::before {
 header.blur nav ul li:hover a::before {
     width: 100%;
 }
+header nav ul li a.active::before,
+header.blur nav ul li a.active::before {
+    width: 100%;
+}
+
 
 header .logo a {
     color: var(--color-white);
@@ -213,6 +219,11 @@ header .logo a.color {
     padding: 10px 50px;
     position: relative;
     transition: color 0.3s ease-in-out;
+    width: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .slide .title-wrap .visual-btn:hover {
     background: var(--color-default);
@@ -546,7 +557,9 @@ section > .inner .title-wrap .sub {
     width: 100%;
 }
 .price-area .menu .price-menu {
+    background: #f5f3f1;
     height: 100%;
+    padding-left: 10px;
     width: 100%;
 
     display: flex;
@@ -577,6 +590,7 @@ section > .inner .title-wrap .sub {
 .price-area .info {
     display: flex;
     gap: 22px;
+    width: 100%;
 }
 .price-area .info .number {
     font-size: 70px;
@@ -585,7 +599,8 @@ section > .inner .title-wrap .sub {
     width: 85px;
 }
 .price-area .info .info-detail {
-    width: 432px;
+    max-width: 700px;
+    width: 100%;
 }
 .price-area .info-detail .tit {
     border-bottom: 2px solid var(--color-default);
@@ -631,7 +646,7 @@ section > .inner .title-wrap .sub {
     border: 1px solid var(--btn-border);
     background: var(--color-white);
     height: 54px;
-    margin-top: 22%;
+    margin-top: 12%;
     margin-left: auto;
     padding: 10px 50px;
 
@@ -1227,10 +1242,7 @@ footer .footer-copy {
     }
     .price-area .menu {
         width: 220px;
-    }
-    .price-area .info .info-detail {
-        width: 380px;
-    }
+    }    
 
     /* promotion */
     .promotion .left-area .tit {
@@ -1280,14 +1292,15 @@ footer .footer-copy {
         left: 0;
         width: 100%;
         background: rgba(17, 17, 17, 0.75);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        height: 100vh;
     }
     header nav.open {
         display: block;
     }
     header nav.bg-color {
-        background: rgba(255,255,255,0.3);
-        backdrop-filter: blur(3px);
-        -webkit-backdrop-filter: blur(3px);
+        background: rgba(255,255,255,0.3);        
     }
     header nav ul {
         display: flex;
@@ -1501,7 +1514,7 @@ footer .footer-copy {
     }
     .price-area .info .info-detail {
         width: 100%;
-    }
+    }    
     .price-area .info-detail .tit {
         font-size: 24px;
     }
@@ -1513,7 +1526,7 @@ footer .footer-copy {
     }
     .price-area .info-detail .detail-list .word .pay {
         font-size: 17px;
-    }
+    }    
     .price-area .info-detail .danger-txt {
         font-size: 11px;
         line-height: 1.5;
@@ -1712,19 +1725,17 @@ footer .footer-copy {
     .price .price-area {
         flex-direction: column;
     }
-
     .price-area .menu {
         display: flex;
         width: 100%;
     }
-
     .price-area .menu li {
         flex: 1;
     }
-
     .price-area .info .info-detail {
         width: 100%;
-    }
+    } 
+    
 
 }
 
